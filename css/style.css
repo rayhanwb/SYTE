@@ -128,7 +128,7 @@ p {
   height: 100%;
   width: 100%;
 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 462px;
   grid-template-rows: repeat(3, auto);
 
   /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
@@ -146,10 +146,13 @@ p {
 
   border: 1px solid #E5E9EB;
   border-radius: 25px;
-
-
 }
 
 .item1 {
-  grid-row: 1 / 4; 
+  grid-column: 1 / 4; 
 }
+
+.item7 {
+  grid-column: 1 / 4;
+}
+
