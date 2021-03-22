@@ -44,7 +44,7 @@ p {
 	width: 100%;
   float: right;
 	padding: 15px;
-	/*background-color: lightblue;*/
+	/*background-color: #31b0cc;*/
 	align-items: center;
 }
 
@@ -70,6 +70,18 @@ p {
   border-radius: 25px;
   overflow: auto;
 }
+
+.icon {
+  width: 41px;
+  padding-right: 18px;
+}
+
+.iconku {
+  width: 41px;
+  padding-right: 18px;
+  
+}
+
 
 @media screen and (max-width: 890px) {
   .column {
