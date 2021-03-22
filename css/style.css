@@ -140,8 +140,8 @@ p {
 
 .content-grid-container > div {
   /*background-color: lightblue;*/
-  text-align: center;
-  padding: 20px 0;
+  /* text-align: center; */
+  padding: 20px;
   font-size: 30px;
 
   border: 1px solid #E5E9EB;
@@ -156,3 +156,16 @@ p {
   grid-column: 1 / 4;
 }
 
+.item3, .item4, .item5 {
+  text-align: center;
+}
+
+.th{
+  text-align: left !important;
+}
+
+.tabelku {
+    width:100%;
+    text-align: left;
+    background-color: gold;
+}
