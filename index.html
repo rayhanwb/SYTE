@@ -15,16 +15,39 @@
 	<!--=========== NAV ===========-->
 
 	<!-- TOP -->
+	
 	<nav class="top-nav">
-		<h2>SYTE</h2>
+		<div class="nav-container">
+			<div class="logo">
+				<p>LOGO</p>
+			</div>
+			
+			<div class="search">
+				<label for="search">
+					<input type="text" id="search" placeholder="Search">
+				</label>
+			</div>
 
-		<div class="topnav">
+			<div class="notification">
+				<a href="#notification">
+					<img src="icon/bell.svg">
+				</a>
+			</div>
 
-			<input type="text" placeholder="Search..">
+			<div class="user-thumbnail">
+				<img src="img/uchiha.png" alt="Uchiha">
+			</div>
 		</div>
-
 	</nav>
+	
+	<!-- <div class="logo">
+		<h2>SYTE</h2>
+	</div>
 
+	<div class="topnav">
+
+	</div> -->
+	
 	<nav id="breadcrumb">
 		<h2>Dashboard</h2>
 	</nav>
@@ -32,19 +55,29 @@
 	<!-- SIDE -->
 	<div class="side">
 
-		<a class="active" href="index.html"><img class="icon"
-				src="icon/home.svg" />Dashboard</a>
-		<a href="#"> <img class="iconku"
-				src="icon/user.svg" />Profile</a>
-		<a href="#"> <img class="icon"
-				src="icon/activity.svg" />Statistic</a>
-		<a href="schedule.html"> <img class="icon"
-				src="icon/calendar.svg" />Schedule</a>
-		<a href="schedule.html"> <img class="icon"
-				src="icon/sliders.svg" />Setting</a>
-		<a href="#" id="logout"><img class="icon" src="icon/log-out.svg" />Log Out</a>
-	</div>
+		<a class="active" href="index.html">
+			<img class="icon" src="icon/home.svg">Dashboard
+		</a>
+		<a class="inactive" href="#">
+			<img class="icon" src="icon/user.svg">Profile
+		</a>
+		<a class="inactive" href="#">
+			<img class="icon" src="icon/activity.svg">Statistic
+		</a>
+		<a class="inactive" href="schedule.html">
+			<img class="icon" src="icon/calendar.svg">Schedule
+		</a>
 
+		<div class="bottom-menu">
+			<a class="inactive" href="schedule.html">
+				<img class="icon" src="icon/sliders.svg">Setting
+			</a>
+			<a class="inactive" href="#" id="logout">
+				<img class="icon" src="icon/log-out.svg">Log Out
+			</a>
+		</div>
+
+	</div>
 
 
 	<!--=========== CONTENT ===========-->

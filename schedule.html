@@ -10,34 +10,78 @@
 </head>
 
 <body>
-    <!-- TOP -->
-    <nav class="top-nav">
-        <h2>SYTE</h2>
+<!--=========== NAV ===========-->
 
-        <div class="topnav">
+<!-- TOP -->
 
-            <input type="text" placeholder="Search..">
+<nav class="top-nav">
+    <div class="nav-container">
+        <div class="logo">
+            <p>LOGO</p>
         </div>
 
-    </nav>
+        <div class="search">
+            <label for="search">
+                <input type="text" id="search" placeholder="Search">
+            </label>
+        </div>
 
-    <nav id="breadcrumb">
+        <div class="notification">
+            <a href="#notification">
+                <img src="icon/bell.svg">
+            </a>
+        </div>
 
-        <h2>Schedule</h2>
-    </nav>
-
-    <!-- SIDE -->
-    <div class="side">
-
-        <a href="index.html"> <img class="icon" src="https://img.icons8.com/small/16/000000/home.png" />Dashboard</a>
-        <a href="#"> <img class="iconku"
-                src="https://img.icons8.com/windows/96/000000/gender-neutral-user.png" />Profile</a>
-        <a href="#"> <img class="icon"
-                src="https://img.icons8.com/material-two-tone/24/000000/graph.png" />Statistic</a>
-        <a class="active" href="schedule.html"> <img class="icon"
-                src="https://img.icons8.com/windows/32/ffffff/calendar.png" />Schedule</a>
-        <a href="#" id="logout"><img class="icon" src="https://img.icons8.com/metro/26/fa314a/export.png" />Log Out</a>
+        <div class="user-thumbnail">
+            <img src="img/uchiha.png" alt="Uchiha">
+        </div>
     </div>
+</nav>
+
+<!-- <div class="logo">
+		<h2>SYTE</h2>
+	</div>
+
+	<div class="topnav">
+
+	</div> -->
+
+<nav id="breadcrumb">
+    <h2>Dashboard</h2>
+</nav>
+
+<!-- SIDE -->
+<div class="side">
+
+    <a class="inactive" href="index.html">
+        <img class="icon" src="icon/home.svg">Dashboard
+    </a>
+    <a class="inactive" href="#">
+        <img class="icon" src="icon/user.svg">Profile
+    </a>
+    <a class="inactive" href="#">
+        <img class="icon" src="icon/activity.svg">Statistic
+    </a>
+    <a class="active" href="schedule.html">
+        <img class="icon" src="icon/calendar.svg">Schedule
+    </a>
+
+    <div class="bottom-menu">
+        <a class="inactive" href="schedule.html">
+            <img class="icon" src="icon/sliders.svg">Setting
+        </a>
+        <a class="inactive" href="#" id="logout">
+            <img class="icon" src="icon/log-out.svg">Log Out
+        </a>
+    </div>
+
+</div>
+
+
+<!--=========== CONTENT ===========-->
+
+
+
     <div class="wrapper">
         <div class="content">
             <main>
