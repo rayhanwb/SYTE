@@ -37,7 +37,7 @@
 
 /* Menu */
 .menu{
-	padding-left: 40px;
+	padding-left: 32px;
 	border: 1px solid #d3d3d3;
 
 }
@@ -64,13 +64,14 @@
 .side a {
 	display: block;
 	color: black;
-	padding: 15px;
+	padding: 15px 15px 15px 20px;
 	text-decoration: none;
+
 }
 
 .side a.active {
 	background-color: #68B19D;
-	color: white; 
+	color: white;
 }
 
 .side a:hover:not(.active) {
