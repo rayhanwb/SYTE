@@ -129,3 +129,8 @@ main {
   color:rgb(0, 0, 0);
   background-color:gray;
 }
+.jam{
+  font-weight: bold;
+  color: rgb(204, 68, 68);
+  font-style: italic;
+}
