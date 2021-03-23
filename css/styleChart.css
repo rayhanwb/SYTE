@@ -164,3 +164,9 @@ font-size: 28px;
 .css {width: 80%; background-color: #2196F3;} /* Blue */
 .js {width: 65%; background-color: #f44336;} /* Red */
 .php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+.tabel{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(148, 148, 148);
+}
