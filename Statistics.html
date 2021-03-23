@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-add.css">
-    <link rel="stylesheet" href="css/style-statistic.css">
+    <link rel="stylesheet" href="css/styleChart.css">
+
+
 </head>
 
 <body>
@@ -84,18 +86,22 @@
             <div class="statistic-grid-container">
                 <!-- Small Card -->
                 <div class="small-card">
+                    <b>7</b>
                     <h3>Mata Kuliah</h3>
                 </div>
-                
+
                 <div class="small-card">
+                    <b>20</b>
                     <h3>SKS</h3>
                 </div>
 
                 <div class="small-card">
+                    <b>4</b>
                     <h3>Semester</h3>
                 </div>
 
                 <div class="small-card">
+                    <b>2</b>
                     <h3>Tingkat</h3>
                 </div>
 
@@ -106,28 +112,118 @@
 
                 <!-- Grafik Besar -->
                 <div class="big-graph">
-                    <h3>Grafik gede</h3>
+                    <div>
+                        <div class="grafiknilaicontainer">
+                            <div class="charts1">
+                                <div class="skills sms1">2.5</div>
+                            </div>
+                            <div class="charts1">
+                                <div class="skills sms2">2.0</div>
+                            </div>
+                            <div class="charts1">
+                                <div class="skills sms3">3.0</div>
+                            </div>
+                            <div class="charts1">
+                                <div class="skills sms4">4.0</div>
+                            </div>
+                            <div class="legend1">
+                                <h3>Semester 1</h3>
+                            </div>
+                            <div class="legend2">
+                                <h3>Semester 2</h3>
+                            </div>
+                            <div class="legend3">
+                                <h3>Semester 3</h3>
+                            </div>
+                            <div class="legend4">
+                                <h3>Semester 4</h3>
+                            </div>
+                        </div>
+
+
+
+                    </div>
                 </div>
 
                 <!-- IPK -->
                 <div class="ipk">
                     <h3>IPK</h3>
+                    <div class="donut-chart-block block">
+                        <div class="donut-chart">
+                            <div id="part1" class="portion-block">
+                                <div class="circle"></div>
+                            </div>
+                            <div id="part2" class="portion-block">
+                                <div class="circle"></div>
+                            </div>
+                            <div id="part3" class="portion-block">
+                                <div class="circle"></div>
+                            </div>
+                            <p class="center">IPK <br> 3.9</p>
+
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Tugas Terakhir -->
                 <div class="last-assignment">
-                    <h3>Tugas terakhir</h3>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Tugas Akhir</th>
+                            <th>Mata Kuliah</th>
+                            <th>Nilai</th>
+                        </tr>
+                        <tr>
+                            <td>IPv4</td>
+                            <td>Jaringan Komputer</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td>Procedure</td>
+                            <td>Teknologi Basis Data</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>Assertion</td>
+                            <td>Konstruksi Perangkat Lunak</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Enkapsulasi</td>
+                            <td>Pemrograman Berorientasi Objek</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
                 </div>
 
                 <!-- Persentase Keaktifan -->
                 <div class="activity-percentage">
                     <h3>Persentase Keaktifan</h3>
+                    <p>HTML</p>
+                    <div class="keaktifan">
+                        <div class="jeniskeaktifan html">90%</div>
+                    </div>
+
+                    <p>CSS</p>
+                    <div class="keaktifan">
+                        <div class="jeniskeaktifan css">80%</div>
+                    </div>
+
+                    <p>JavaScript</p>
+                    <div class="keaktifan">
+                        <div class="jeniskeaktifan js">65%</div>
+                    </div>
+
+                    <p>PHP</p>
+                    <div class="keaktifan">
+                        <div class="jeniskeaktifan php">60%</div>
+                    </div>
                 </div>
 
             </div>
 
 
-            
+
         </div>
     </div>
 
