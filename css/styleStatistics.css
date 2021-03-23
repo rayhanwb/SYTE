@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100% !important;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 2.2%;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -1.4%;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1.4%;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5%;
+}
+
+.container {
+	width: 100%;
+  float: right;
+	/* padding: 15px; */
+	/*background-color: #31b0cc;*/
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	/*background-color: violet;*/
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin: 15px;
+  padding: 15px;
+  /*background-color: salmon;*/
+  border: 1px solid #E5E9EB;
+  border-radius: 25px;
+  overflow: auto;
+}
+
+.icon {
+  width: 41px;
+  padding-right: 18px;
+}
+
+@media screen and (max-width: 890px) {
+  .column {
+    width: 100%;
+  }
+
+  .row {
+    display: block;
+  }
+}
+
+
+/*Scrollbar*/
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+    border:0px solid #ccc;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #363636; 
+    border:0px solid #eee;
+    height:100px;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: #31b0cc; 
+}
+
+
+/*BISMILLAH GRID*/
+
+
+.content-grid-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+
+  grid-template-columns: 1fr 1fr 1fr 462px;
+  grid-template-rows: repeat(3, auto);
+
+  /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+
+  /*background-color: blue;*/
+  grid-gap: 30px;
+  padding: 30px;
+}
+
+.content-grid-container > div {
+  /*background-color: lightblue;*/
+  /* text-align: center; */
+  padding: 20px;
+  font-size: 30px;
+
+  border: 1px solid #E5E9EB;
+  border-radius: 25px;
+}
+
+/* Grid item */
+
+.item1 {
+  grid-column: 1 / 4; 
+}
+
+.item7 {
+  grid-column: 1 / 4;
+}
+
+.item3, .item4, .item5 {
+  text-align: center;
+}
+
+.th{
+  text-align: left !important;
+}
+
+.tabelku {
+    width:100%;
+    text-align: left;
+    background-color: gold;
+}
