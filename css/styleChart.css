@@ -15,7 +15,7 @@
 /* Container for skill bars */
 .charts1 {
     /* grid-area: scard; */
-    
+
     width: 40px;
     height: 200px; /* Full width */
     background-color: rgb(156, 148, 148); /* Grey background */
@@ -40,14 +40,15 @@
     grid-column: 4 / 5;
     grid-row: 4 / 5;
   }
+
 .skills {
 padding: 5px;
 color: rgb(0, 0, 0); /* White text color */
 }
 
-.sms1 {width: 40px; height: 20%; background-color: #e2e2e2;} /* Green */
-.sms2 {width: 40px; height: 50%; background-color: #e2e2e2;} /* Blue */
-.sms3 {width: 40px; height: 60%; background-color: #e2e2e2;} /* Red */
+.sms1 {width: 40px; height: 25%; background-color: #e2e2e2;} /* Green */
+.sms2 {width: 40px; height: 27.5%; background-color: #e2e2e2;} /* Blue */
+.sms3 {width: 40px; height: 50%; background-color: #e2e2e2;} /* Red */
 .sms4 {width: 40px; height: 20%; background-color: #e2e2e2;} /* Dark Grey */
 
 /* donut chart */
@@ -160,10 +161,10 @@ font-size: 28px;
   border-radius: 25px;
 }
 
-.html {width: 90%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
+.html {width: 94%; background-color: #4CAF50;} /* Green */
+.css {width: 87%; background-color: #2196F3;} /* Blue */
+.js {width: 87%; background-color: #f44336;} /* Red */
+.php {width: 87%; background-color: #808080;} /* Dark Grey */
 
 .tabel{
   width: 100%;
