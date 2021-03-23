@@ -125,14 +125,14 @@ p {
 
   /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
 
-  /*background-color: blue;*/
+  background-color: rgb(253, 253, 253);
   grid-gap: 30px;
   padding: 30px;
 }
 
 .content-grid-container > div,
 .statistic-grid-container > div {
-  /*background-color: lightblue;*/
+  background-color: white;
   /* text-align: center; */
   padding: 20px;
 

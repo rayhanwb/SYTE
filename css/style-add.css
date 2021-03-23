@@ -157,6 +157,10 @@
 	color: white;
 }
 
+.side a.active img {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(187%) contrast(100%);
+}
+
 .side a:hover:not(.active) {
 	background-color: #777;
 	color: white;

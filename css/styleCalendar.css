@@ -5,17 +5,9 @@
 main {
   grid-area: content;
   padding: 48px;
+  /* background-color: aqua; */
 }
 
-.wrapper {
-    display: grid;
-    grid-template-rows: 70px 1fr 70px;
-    grid-template-columns: 1fr;
-    grid-template-areas:"content";
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Inter', sans-serif;
-  }
 
 /* ======================= Style Judul Kalender ======================= */
   .Bulan{
