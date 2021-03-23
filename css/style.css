@@ -39,8 +39,6 @@ p {
   letter-spacing: -0.5%;
 }
 
-
-
 .container {
 	width: 100%;
   float: right;
@@ -132,11 +130,11 @@ p {
   padding: 30px;
 }
 
-.content-grid-container > div {
+.content-grid-container > div,
+.statistic-grid-container > div {
   /*background-color: lightblue;*/
   /* text-align: center; */
   padding: 20px;
-  font-size: 30px;
 
   border: 1px solid #E5E9EB;
   border-radius: 25px;
