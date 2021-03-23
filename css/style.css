@@ -130,17 +130,17 @@ p {
   padding: 30px;
 }
 
-.content-grid-container > div {
+.content-grid-container > div,
+.statistic-grid-container > div {
   /*background-color: lightblue;*/
   /* text-align: center; */
   padding: 20px;
-  font-size: 30px;
 
   border: 1px solid #E5E9EB;
   border-radius: 25px;
 }
 
-/* Grid item */
+/* Grid item: Dashboard */
 
 .item1 {
   grid-column: 1 / 4; 
@@ -159,7 +159,56 @@ p {
 }
 
 .tabelku {
-    width:100%;
-    text-align: left;
-    background-color: gold;
+  width:100%;
+  text-align: left;
+  background-color: gold;
+}
+
+
+/* GRID: STATISTIC */
+
+.statistic-grid-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 25%;
+  grid-template-rows: repeat(4, auto);
+
+  grid-gap: 30px;
+  padding: 30px;
+}
+
+/* Grid item: statistic */
+
+.small-card {
+  /* grid-area: scard; */
+}
+
+.recent-assignment {
+  /* grid-area: recenta; */
+  grid-column: 5;
+  grid-row: 1 / 4;
+}
+
+.big-graph {
+  /* grid-area: bgraph; */
+  grid-column: 1 / 5;
+  grid-row: 2 / 5;
+}
+
+.ipk {
+  /* grid-area: ipk; */
+  grid-column: 1;
+  /* grid-row: 1 / 4; */
+}
+
+.last-assignment {
+  /* grid-area: lasta; */
+  grid-column: 2 / 5;
+}
+
+.activity-percentage {
+  /* grid-area: acpercentage; */
+  grid-row: 4 / 6;
 }
