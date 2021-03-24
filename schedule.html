@@ -12,176 +12,177 @@
 </head>
 
 <body>
-<!--=========== NAV ===========-->
-<!-- TOP -->
+    <!--=========== NAV ===========-->
+    <!-- TOP -->
 
-<nav class="top-nav">
-    <div class="nav-container">
-        <div class="logo">
-            <img src="icon/logo.svg" alt="Syte">
-            <p>SYTE</p>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="icon/logo.svg" alt="Syte">
+                <p>SYTE</p>
+            </div>
+
+            <div class="search">
+                <label for="search">
+                    <input type="text" id="search" placeholder="Search">
+                </label>
+            </div>
+
+            <div class="notification">
+                <a href="#notification">
+                    <img src="icon/bell.svg">
+                </a>
+            </div>
+
+            <div class="user-thumbnail">
+                <img src="img/uchiha.png" alt="Uchiha">
+            </div>
         </div>
+    </nav>
 
-        <div class="search">
-            <label for="search">
-                <input type="text" id="search" placeholder="Search">
-            </label>
-        </div>
+    <nav id="breadcrumb">
+        <h2>Schedule</h2>
+    </nav>
 
-        <div class="notification">
-            <a href="#notification">
-                <img src="icon/bell.svg">
+    <!-- SIDE -->
+    <div class="side">
+
+        <a class="inactive" href="index.html">
+            <img class="icon" src="icon/home.svg">Dashboard
+        </a>
+        <a class="inactive" href="#">
+            <img class="icon" src="icon/user.svg">Profile
+        </a>
+        <a class="inactive" href="Statistics.html">
+            <img class="icon" src="icon/activity.svg">Statistic
+        </a>
+        <a class="active" href="schedule.html">
+            <img class="icon" src="icon/calendar.svg">Schedule
+        </a>
+
+        <div class="bottom-menu">
+            <a class="inactive" href="settings.html">
+                <img class="icon" src="icon/sliders.svg">Setting
+            </a>
+            <a class="inactive" href="#" id="logout">
+                <img class="icon" src="icon/log-out.svg">Log Out
             </a>
         </div>
 
-        <div class="user-thumbnail">
-            <img src="img/uchiha.png" alt="Uchiha">
-        </div>
-    </div>
-</nav>
-
-<nav id="breadcrumb">
-    <h2>Schedule</h2>
-</nav>
-
-<!-- SIDE -->
-<div class="side">
-
-    <a class="inactive" href="index.html">
-        <img class="icon" src="icon/home.svg">Dashboard
-    </a>
-    <a class="inactive" href="#">
-        <img class="icon" src="icon/user.svg">Profile
-    </a>
-    <a class="inactive" href="Statistics.html">
-        <img class="icon" src="icon/activity.svg">Statistic
-    </a>
-    <a class="active" href="schedule.html">
-        <img class="icon" src="icon/calendar.svg">Schedule
-    </a>
-
-    <div class="bottom-menu">
-        <a class="inactive" href="settings.html">
-            <img class="icon" src="icon/sliders.svg">Setting
-        </a>
-        <a class="inactive" href="#" id="logout">
-            <img class="icon" src="icon/log-out.svg">Log Out
-        </a>
     </div>
 
-</div>
 
-
-<!--=========== CONTENT ===========-->
+    <!--=========== CONTENT ===========-->
 
     <div class="content">
         <!-- <div class="wrapper"> -->
-            <!-- <div class="content"> -->
-                <main>
+        <!-- <div class="content"> -->
+        <main>
+            <div>
+                <div class="Bulan">March</div>
+                <div class="Tahun">2021</div>
+                <div class="calendarType">Assignment</div>
+            </div>
+
+            <div class="calendar">
+                <div class="calendar__header">
+                    <div>Monday</div>
+                    <div>Tuesday</div>
+                    <div>Wednesday</div>
+                    <div>Thursday</div>
+                    <div>Friday</div>
+                    <div>Saturday</div>
+                    <div>Sunday</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day AnotherMonth">28</div>
+                    <div class="calendar__day day">1</div>
+                    <div class="calendar__day day">2</div>
+                    <div class="calendar__day day">3</div>
+                    <div class="calendar__day day">4</div>
+                    <div class="calendar__day day">5</div>
+                    <div class="calendar__day day">6</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">7</div>
+                    <div class="calendar__day day">8</div>
+                    <div class="calendar__day day">9
+                        <div>
+                            <button class="button" id="myBtn">Tugas Web</button>
+                            <button class="button" id="myBtn1">Tugas KPL</button>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">10</div>
+                    <div class="calendar__day day">11</div>
+                    <div class="calendar__day day">12</div>
+                    <div class="calendar__day day">13</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">14</div>
+                    <div class="calendar__day day">15</div>
+                    <div class="calendar__day day">16</div>
+                    <div class="calendar__day day">17</div>
+                    <div class="calendar__day day">18</div>
+                    <div class="calendar__day day">19</div>
+                    <div class="calendar__day day">20</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">21</div>
+                    <div class="calendar__day day">22</div>
+                    <div class="calendar__day day">23</div>
+                    <div class="calendar__day day">24</div>
+                    <div class="calendar__day day">25</div>
+                    <div class="calendar__day day">26</div>
+                    <div class="calendar__day day">27</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">28</div>
+                    <div class="calendar__day day">29</div>
+                    <div class="calendar__day day">30</div>
+                    <div class="calendar__day day">31</div>
+                    <div class="calendar__day AnotherMonth">1</div>
+                    <div class="calendar__day AnotherMonth">2</div>
+                    <div class="calendar__day AnotherMonth">3</div>
+                </div>
+            </div>
+
+            <!-- ====================== Tugas Web ====================== -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Tugas WEB</h2>
+                    <p> Wednesday, 9 March 2021</p>
+                    <p class="jam"> 12:40</p>
+                    <hr class="line">
+                    <p>Buatlah sebuah web yang berhubungan dengan pembelajaran jarak jauh dengan menggunakan
+                        html,
+                        css
+                        dan javascript</p>
+                </div>
+                <script src="js/scriptCalendar.js"></script>
+            </div>
+
+            <!-- ====================== Tugas KPL ====================== -->
+            <div id="myModal1" class="modal1">
+                <div class="modal-content">
+                    <span class="close1">&times;</span>
                     <div>
-                        <div class="Bulan">March</div>
-                        <div class="Tahun">2021</div>
+                        <h2>Tugas Konstruksi Perangkat Lunak</h2>
+                        <p> Wednesday, 9 March 2021</p>
+                        <p class="jam"> 19:40</p>
                     </div>
-    
-                    <div class="calendar">
-                        <div class="calendar__header">
-                            <div>Monday</div>
-                            <div>Tuesday</div>
-                            <div>Wednesday</div>
-                            <div>Thursday</div>
-                            <div>Friday</div>
-                            <div>Saturday</div>
-                            <div>Sunday</div>
-                        </div>
-                        <div class="calendar__week">
-                            <div class="calendar__day AnotherMonth">28</div>
-                            <div class="calendar__day day">1</div>
-                            <div class="calendar__day day">2</div>
-                            <div class="calendar__day day">3</div>
-                            <div class="calendar__day day">4</div>
-                            <div class="calendar__day day">5</div>
-                            <div class="calendar__day day">6</div>
-    
-                        </div>
-                        <div class="calendar__week">
-                            <div class="calendar__day day">7</div>
-                            <div class="calendar__day day">8</div>
-                            <div class="calendar__day day">9
-                                <div>
-                                    <button class="button" id="myBtn">Tugas Web</button>
-                                    <button class="button" id="myBtn1">Tugas KPL</button>
-                                </div>
-                            </div>
-                            <div class="calendar__day day">10</div>
-                            <div class="calendar__day day">11</div>
-                            <div class="calendar__day day">12</div>
-                            <div class="calendar__day day">13</div>
-    
-                        </div>
-                        <div class="calendar__week">
-                            <div class="calendar__day day">14</div>
-                            <div class="calendar__day day">15</div>
-                            <div class="calendar__day day">16</div>
-                            <div class="calendar__day day">17</div>
-                            <div class="calendar__day day">18</div>
-                            <div class="calendar__day day">19</div>
-                            <div class="calendar__day day">20</div>
-    
-                        </div>
-                        <div class="calendar__week">
-                            <div class="calendar__day day">21</div>
-                            <div class="calendar__day day">22</div>
-                            <div class="calendar__day day">23</div>
-                            <div class="calendar__day day">24</div>
-                            <div class="calendar__day day">25</div>
-                            <div class="calendar__day day">26</div>
-                            <div class="calendar__day day">27</div>
-    
-                        </div>
-                        <div class="calendar__week">
-                            <div class="calendar__day day">28</div>
-                            <div class="calendar__day day">29</div>
-                            <div class="calendar__day day">30</div>
-                            <div class="calendar__day day">31</div>
-                            <div class="calendar__day AnotherMonth">1</div>
-                            <div class="calendar__day AnotherMonth">2</div>
-                            <div class="calendar__day AnotherMonth">3</div>
-                        </div>
-                    </div>
-    
-                    <!-- ====================== Tugas Web ====================== -->
-                    <div id="myModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h2>Tugas WEB</h2>
-                            <p> Wednesday, 9 March 2021</p>
-                            <p class="jam"> 12:40</p>
-                            <hr class="line">
-                            <p>Buatlah sebuah web yang berhubungan dengan pembelajaran jarak jauh dengan menggunakan
-                                html,
-                                css
-                                dan javascript</p>
-                        </div>
-                        <script src="js/scriptCalendar.js"></script>
-                    </div>
-    
-                    <!-- ====================== Tugas KPL ====================== -->
-                    <div id="myModal1" class="modal1">
-                        <div class="modal-content">
-                            <span class="close1">&times;</span>
-                            <div>
-                                <h2>Tugas Konstruksi Perangkat Lunak</h2>
-                                <p> Wednesday, 9 March 2021</p>
-                                <p class="jam"> 19:40</p>
-                            </div>
-                            <hr class="line">
-                            <p>Buatlah sebuah analisaweb yang berhubungan dengan pembelajaran jarak jauh dengan menggunakan
-                                JUNIT</p>
-                        </div>
-                        <script src="js/scriptCalendar.js"></script>
-                    </div>
-                </main>
-            <!-- </div> -->
+                    <hr class="line">
+                    <p>Buatlah sebuah analisaweb yang berhubungan dengan pembelajaran jarak jauh dengan menggunakan
+                        JUNIT</p>
+                </div>
+                <script src="js/scriptCalendar.js"></script>
+            </div>
+        </main>
+        <!-- </div> -->
         <!-- </div> -->
         <div class="container">
 
