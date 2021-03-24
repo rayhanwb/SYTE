@@ -72,6 +72,7 @@ p {
 
 .icon {
   width: 41px;
+  height: auto;
   padding-right: 18px;
 }
 
@@ -97,70 +98,32 @@ p {
 }
  
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0);
+  /* background: rgba(0,0,0,0); */
+  background: #000;
     border:0px solid #ccc;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #363636; 
+  background: white; 
     border:0px solid #eee;
     height:100px;
 }
  
 ::-webkit-scrollbar-thumb:hover {
-  background: #31b0cc; 
+  background: #68B19D; 
 }
 
 
 /*BISMILLAH GRID*/
 
-
-.content-grid-container {
-  display: grid;
-  height: 100%;
-  width: 100%;
-
-  grid-template-columns: 1fr 1fr 1fr 462px;
-  grid-template-rows: auto-fit, auto;
-
-  /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
-
-  background-color: rgb(253, 253, 253);
-  grid-gap: 30px;
-  padding: 30px;
-}
-
 .content-grid-container > div,
 .statistic-grid-container > div {
   background-color: white;
-  /* text-align: center; */
-  padding: 20px;
+  padding: 25px 30px;
 
   border: 1px solid #E5E9EB;
   border-radius: 25px;
 }
-
-/* Grid item */
-
-.item1 {
-  grid-column: 1 / 4;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: auto;
-  padding: 10px;
-}
-
-.item1 .profile{
-  text-align: center;
-}
-.item7 {
-  grid-column: 1 / 4;
-}
-
-.item3, .item4, .item5 {
-  text-align: center;
-}
-
 
 .th{
   text-align: left !important;
@@ -197,39 +160,3 @@ p {
     margin: 0 auto;
     border: 1px solid #b4ff28;
 }*/
-
-/* Announcement */
-#item-flex-left{
-  float: left;
-  /* background-color: seagreen; */
-  width: 70%; 
-}
-
-#item-flex-right{
-  float: right;
-  text-align: right;
-  /* background-color: aqua;  */
-}
-
-#item-flex-left, #item-flex-right{
-  border: none;
-  padding: 0;
-  margin: 0;
-  height: auto;
-}
-
-.item6 {
-  display: grid;
-  /* grid-template-columns: 60% 40%;
-  grid-template-rows: auto; */
-  /* padding: 0;
-  margin: 0; */
-  /* grid-row: 2/4; */
-  grid-column: 4;
-}
-
-#date{
-  height: 40px !important;
-  /* width: auto; */
-  /* background-color: blueviolet; */
-}

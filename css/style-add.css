@@ -21,6 +21,17 @@
 	grid-area: logo;
 }
 
+.top-nav .logo img {
+	height: 30px;
+	width: auto;
+}
+
+.top-nav .logo p {
+	display: inline;
+	/* padding: auto; */
+	
+}
+
 .top-nav .search {
 	grid-area: search;
 	margin-left: 0 !important;

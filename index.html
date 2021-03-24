@@ -7,7 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SYTE - Bismillah</title>
 
+	<link rel="icon" href="icon/logo.svg" sizes="any" type="image/svg+xml">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-dashboard.css">
 	<link rel="stylesheet" href="css/style-add.css">
 </head>
 
@@ -20,7 +22,8 @@
 	<nav class="top-nav">
 		<div class="nav-container">
 			<div class="logo">
-				<p>LOGO SYTE</p>
+				<img src="icon/logo.svg" alt="Syte">
+				<p>SYTE</p>
 			</div>
 
 			<div class="search">
@@ -40,14 +43,6 @@
 			</div>
 		</div>
 	</nav>
-
-	<!-- <div class="logo">
-		<h2>SYTE</h2>
-	</div>
-
-	<div class="topnav">
-
-	</div> -->
 
 	<nav id="breadcrumb">
 		<h2>Dashboard</h2>
@@ -70,7 +65,7 @@
 		</a>
 
 		<div class="bottom-menu">
-			<a class="inactive" href="schedule.html">
+			<a class="inactive" href="settings.html">
 				<img class="icon" src="icon/sliders.svg">Setting
 			</a>
 			<a class="inactive" href="#" id="logout">
@@ -85,17 +80,27 @@
 
 	<div class="content">
 		<div class="container">
+			
 			<div class="content-grid-container">
-				<div class="item1">
-					<div class="pict">
-						<img src="img/uchiha.png" style="width:200px">
+
+				<div class="short-profile">
+					<div class="row">
+						<div class="column" id="profile-pic">
+							<!-- <div > -->
+								<img src="img/uchiha.png" style="width:200px">
+							<!-- </div> -->
+						</div>
+						<div class="column">
+							<h2>Hello,</h2>
+							<h1>Andre Uchiha</h1>
+							<!-- <span><sub><i>@1901010</i></sub></span> -->
+							<p>"Aku Sang Juara"</p>
+
+						</div>
 					</div>
-					<div class="profile">
-						<h1>Andre Uchiha</h1>
-						<p>"Aku Sang Juara"</p>
-					</div>
+					
 				</div>
-				<div class class="item2">
+				<div class="recent-activity">
 					<div class="item2-left">
 						<!-- style="background-color:#aaa;" -->
 						<div class="row">
@@ -108,10 +113,13 @@
 						</div>
 						<div class="row">
 							<div class="column" id="item-flex-left">
-								<h2>Achievment</h2>
+								<h3>Achievement</h3>
 							</div>
 						</div>
 						<div class="row">
+							<div class="column" id="activity-icon">
+								<img src="icon/up.svg">
+							</div>
 							<div class="column" id="item-flex-left">
 								<p>Your rank goes up</p>
 							</div>
@@ -121,18 +129,24 @@
 						</div>
 						<div class="row">
 							<div class="column" id="item-flex-left">
-								<h2>Assignment</h2>
+								<h3>Assignment</h3>
 							</div>
 						</div>
 						<div class="row">
+							<div class="column" id="activity-icon">
+								<img src="icon/check.svg">
+							</div>
 							<div class="column" id="item-flex-left">
-								<p>OOP Assignment result</p>
+								<p>OOP assignment result</p>
 							</div>
 							<div class="column" id="item-flex-right">
-								<p>#32 to #31</p>
+								<p>89</p>
 							</div>
 						</div>
 						<div class="row">
+							<div class="column" id="activity-icon">
+								<img src="icon/new.svg">
+							</div>
 							<div class="column" id="item-flex-left">
 								<p>New assignment :Operation Sys..</p>
 							</div>
@@ -141,6 +155,9 @@
 							</div>
 						</div>
 						<div class="row">
+							<div class="column" id="activity-icon">
+								<img src="icon/new.svg">
+							</div>
 							<div class="column" id="item-flex-left">
 								<p>New assesment :Database Tech..</p>
 							</div>
@@ -153,25 +170,25 @@
 					<div class="item2-right">
 					</div>
 				</div>
-				<div class="item3">
+				<div class="square-card">
 					<p>Departement</p>
-					<h2>Software Engineering</h2>
+					<h3>Software Engineering</h3>
 					<img src="icon/department.svg" style="width: 22px">
 				</div>
-				<div class="item4">
+				<div class="square-card">
 					<p>Faculty</p>
-					<h2>Kamda Cibiru</h2>
+					<h3>Kamda Cibiru</h3>
 					<img src="icon/faculty.svg" style="width: 22px">
 				</div>
-				<div class="item5">
+				<div class="square-card">
 					<p>Semester</p>
-					<h2>4</h2><br>
+					<h3>4</h3><br>
 					<img src="icon/semester.svg" style="width: 22px">
 				</div>
 				<div class="item6">
 					<div class="row" id="date">
 						<div class="column" id="item-flex-left">
-							<h2>Wednesday, March 17</h2>
+							<h3>Wednesday, March 17</h3>
 						</div>
 						<div class="column" id="item-flex-right">
 							<p>12:31 PM</p>
@@ -179,7 +196,7 @@
 					</div>
 					<div class="row" id="date">
 						<div class="column" id="item-flex-left">
-							<h2>Upcoming class</h2>
+							<h3>Upcoming class</h3>
 						</div>
 					</div>
 					<div class="row" id="date">
@@ -207,21 +224,8 @@
 						</div>
 					</div>
 
-					<!-- <div class="upcaming">
-						<h3>Wednesday, 13 March</h3>
-						<h3>Upcoming class</h3>
-						<p>Web Programming (P7)</p>
-						<p>IT Business (P8)</p>
-						<p>Operation System (P9)</p>
-					</div>
-					<div class="label">
-						<p>12:31 PM</p> <br>
-						<p>01:00 pm</p>
-						<p>23/03</p>
-						<p>24/03</p>
-					</div> -->
 				</div>
-				<div class="item7">
+				<div class="short-announcement">
 					<h3>Announcement</h3>
 					<div class="row">
 						<div class="column" id="item-flex-left">

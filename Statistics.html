@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="css/style-add.css">
     <link rel="stylesheet" href="css/styleChart.css">
 
-
+    <script src="js/canvasjs.min.js"></script>
+    <script src="js/statistic.js"></script>
 </head>
 
 <body>
 
     <!--=========== NAV ===========-->
-
-    <!-- TOP -->
+<!-- TOP -->
 
     <nav class="top-nav">
         <div class="nav-container">
             <div class="logo">
-                <p>LOGO</p>
+                <img src="icon/logo.svg" alt="Syte">
+                <p>SYTE</p>
             </div>
 
             <div class="search">
@@ -65,7 +66,7 @@
         </a>
 
         <div class="bottom-menu">
-            <a class="inactive" href="schedule.html">
+            <a class="inactive" href="settings.html">
                 <img class="icon" src="icon/sliders.svg">Setting
             </a>
             <a class="inactive" href="#" id="logout">
@@ -157,7 +158,8 @@
                 <!-- Grafik Besar -->
                 <div class="big-graph">
                     <h2> Grafik IPK Semester</h2>
-                    <div>
+                    <div id="ip-semester" style="height: 300px; width: 100%;"></div>
+                    <!-- <div>
                         <div class="grafiknilaicontainer">
                             <div class="charts1">
                                 <div class="skills sms1">3.0</div>
@@ -188,7 +190,8 @@
 
 
 
-                    </div>
+                    </div> -->
+
                 </div>
 
                 <!-- IPK -->
@@ -214,6 +217,7 @@
                 <!-- Tugas Terakhir -->
                 <div class="last-assignment">
                     <h3>Nilai</h3>
+                    <!-- <div id="assignment-result" style="height: 300px; width: 100%;"></div> -->
                     <table class="tabel">
                         <tr class="tabel">
                             <th>Tugas Akhir</th>
@@ -241,10 +245,90 @@
                             <td>100</td>
                         </tr>
                     </table>
+
+                    <!-- <div class="table">
+                    
+                        <div class="row header">
+                            <div class="cell">
+                                Name
+                            </div>
+                            <div class="cell">
+                                Age
+                            </div>
+                            <div class="cell">
+                                Occupation
+                            </div>
+                            <div class="cell">
+                                Location
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="cell" data-title="Name">
+                                Luke Peters
+                            </div>
+                            <div class="cell" data-title="Age">
+                                25
+                            </div>
+                            <div class="cell" data-title="Occupation">
+                                Freelance Web Developer
+                            </div>
+                            <div class="cell" data-title="Location">
+                                Brookline, MA
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="cell" data-title="Name">
+                                Joseph Smith
+                            </div>
+                            <div class="cell" data-title="Age">
+                                27
+                            </div>
+                            <div class="cell" data-title="Occupation">
+                                Project Manager
+                            </div>
+                            <div class="cell" data-title="Location">
+                                Somerville, MA
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="cell" data-title="Name">
+                                Maxwell Johnson
+                            </div>
+                            <div class="cell" data-title="Age">
+                                26
+                            </div>
+                            <div class="cell" data-title="Occupation">
+                                UX Architect & Designer
+                            </div>
+                            <div class="cell" data-title="Location">
+                                Arlington, MA
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="cell" data-title="Name">
+                                Harry Harrison
+                            </div>
+                            <div class="cell" data-title="Age">
+                                25
+                            </div>
+                            <div class="cell" data-title="Occupation">
+                                Front-End Developer
+                            </div>
+                            <div class="cell" data-title="Location">
+                                Boston, MA
+                            </div>
+                        </div>
+                    
+                    </div> -->
+
                 </div>
 
                 <!-- Persentase Keaktifan -->
-                <div class="activity-percentage">
+                <!-- <div class="activity-percentage">
                     <h3>Kehadiran</h3>
                     <p>Pemrograman WEB</p>
                     <div class="keaktifan">
@@ -265,7 +349,7 @@
                     <div class="keaktifan">
                         <div class="jeniskeaktifan php">87%</div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
