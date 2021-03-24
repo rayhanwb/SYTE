@@ -222,19 +222,27 @@ padding: 10px;
   width: 40px;
   height: 40px;
 }
+
+
+
+
 /* GRID: STATISTIC */
+
+
 
 .statistic-grid-container {
   display: grid;
   height: 100%;
   width: 100%;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr 25%;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 25%; */
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, auto);
 
   grid-gap: 30px;
   padding: 30px;
 }
+
 
 /* Grid item: statistic */
 
@@ -243,11 +251,10 @@ padding: 10px;
   border: #2196F3;
 }
 
-.recent-assignment {
-  /* grid-area: recenta; */
+/* .announcement {
   grid-column: 5;
   grid-row: 1 / 3;
-}
+} */
 
 .big-graph {
   /* grid-area: bgraph; */
@@ -257,14 +264,22 @@ padding: 10px;
 
 .ipk {
   /* grid-area: ipk; */
-  grid-column: 1;
-  grid-row: 3;
+  grid-column: 5;
+  grid-row: 2;
 }
 
-.last-assignment {
+.chart-last-assignment { 
   /* grid-area: lasta; */
-  grid-column: 2 / 6;
+  grid-column: 3 / 6;
 }
+
+/* INI YG TABEL NILAINYA */
+.table-last-assignmne { 
+  /* grid-area: lasta; */
+  grid-column: 1/3;
+}
+
+
 
 .activity-percentage {
   /* grid-area: acpercentage; */
