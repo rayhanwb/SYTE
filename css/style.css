@@ -13,6 +13,7 @@ html, body {
 
 body {
   font-family: 'Inter', sans-serif;
+  color: #252C32;
 }
 
 h1 {
@@ -99,18 +100,18 @@ p {
  
 ::-webkit-scrollbar-track {
   /* background: rgba(0,0,0,0); */
-  background: #000;
+  background: black;
     border:0px solid #ccc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white; 
+  background: #68B19D;
     border:0px solid #eee;
     height:100px;
 }
  
 ::-webkit-scrollbar-thumb:hover {
-  background: #68B19D; 
+  background: #49796c; 
 }
 
 

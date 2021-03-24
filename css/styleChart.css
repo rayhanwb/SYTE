@@ -60,16 +60,18 @@ color: rgb(0, 0, 0); /* White text color */
 
 .donut-chart {
   position: relative;
-	width: 200px;
-  height: 200px;
+	width: 180px;
+  height: 180px;
 	margin: 0 auto 2rem;
 	border-radius: 100%
  }
+
 p.center {
   background: #ffffff;
   position: absolute;
   text-align: center;
-font-size: 28px;
+  font-size: 23px;
+  font-weight: 600;
   top:0;left:0;bottom:0;right:0;
   width: 130px;
   height: 130px;
@@ -87,33 +89,31 @@ font-size: 28px;
     position: absolute;
     width: 100%;
   }
+
 .circle {
-    border-radius: 50%;
+    border-radius: 70%;
     clip: rect(0px, 100px, 200px, 0px);
     height: 100%;
     position: absolute;
     width: 100%;
-    font-family: monospace;
-    font-size: 1.5rem;
   }
-	
 	
 #part1 {
-    transform: rotate(0deg);
-  }
+  transform: rotate(0deg);
+}
 
-	#part1 .circle {
-		background-color: #00fbff;
-		/*transform: rotate(76deg);*/
-		animation: first 1s 1 forwards;
-	  }
+#part1 .circle {
+  background-color: #30B3AC;
+  /*transform: rotate(76deg);*/
+  animation: first 1s 1 forwards;
+}
 	
 	
 #part2 {
     transform: rotate(100deg);
   }
 #part2 .circle {
-    background-color: #00fbff;
+    background-color: #30B3AC;
     animation: second 1s 1 forwards 0.9s;
   }
 #part3 {
@@ -169,20 +169,34 @@ font-size: 28px;
 .tabel{
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid rgb(148, 148, 148);
+  /* border: 1px solid rgb(148, 148, 148); */
+  font-size: 12px;
+  overflow: hidden;
 }
+
+th, td {
+  padding: 8px;
+  /* text-align: left; */
+}
+
+tr:nth-child(even) {
+  background-color: #ebebeb;
+}
+
+@media screen and (max-width: 1720px) {
+  .tabel {
+    width: ;
+  }
+}
+
 .box {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid rgb(148, 148, 148);
 }
 
-
-/* Announcement */
 #item-flex-left{
   float: left;
-
-
 }
 
 #item-flex-center{
@@ -215,10 +229,11 @@ font-size: 28px;
   border-radius: 50%;
   display: inline-block;
 }
+
 .rcorners1 {
   border-radius: 10px 10px 10px 10px;
   background: #73AD21;
-padding: 10px;
+  padding: 10px;
   width: 40px;
   height: 40px;
 }
@@ -227,7 +242,6 @@ padding: 10px;
 
 
 /* GRID: STATISTIC */
-
 
 
 .statistic-grid-container {
@@ -251,11 +265,6 @@ padding: 10px;
   border: #2196F3;
 }
 
-/* .announcement {
-  grid-column: 5;
-  grid-row: 1 / 3;
-} */
-
 .big-graph {
   /* grid-area: bgraph; */
   grid-column: 1 / 5;
@@ -266,15 +275,17 @@ padding: 10px;
   /* grid-area: ipk; */
   grid-column: 5;
   grid-row: 2;
+  text-align: center;
 }
 
 .chart-last-assignment { 
   /* grid-area: lasta; */
   grid-column: 3 / 6;
+  grid-row: 3/5;
 }
 
 /* INI YG TABEL NILAINYA */
-.table-last-assignmne { 
+.table-last-assignment { 
   /* grid-area: lasta; */
   grid-column: 1/3;
 }
@@ -289,74 +300,3 @@ padding: 10px;
 .ip-semester {
   z-index: -1000 !important;
 }
-
-/* --------- Tabel tapi udah rada bagus */
-
-/* .table {
-  margin: 0 0 40px 0;
-  width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  display: table;
-}
-@media screen and (max-width: 580px) {
-  .table {
-    display: block;
-  }
-}
-
-.row {
-  display: table-row;
-  background: #f6f6f6;
-}
-.row:nth-of-type(odd) {
-  background: #e9e9e9;
-}
-.row.header {
-  font-weight: 900;
-  color: #ffffff;
-  background: #ea6153;
-}
-.row.green {
-  background: #27ae60;
-}
-.row.blue {
-  background: #2980b9;
-}
-@media screen and (max-width: 580px) {
-  .row {
-    padding: 14px 0 7px;
-    display: block;
-  }
-  .row.header {
-    padding: 0;
-    height: 6px;
-  }
-  .row.header .cell {
-    display: none;
-  }
-  .row .cell {
-    margin-bottom: 10px;
-  }
-  .row .cell:before {
-    margin-bottom: 3px;
-    content: attr(data-title);
-    min-width: 98px;
-    font-size: 10px;
-    line-height: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #969696;
-    display: block;
-  }
-}
-
-.cell {
-  padding: 6px 12px;
-  display: table-cell;
-}
-@media screen and (max-width: 580px) {
-  .cell {
-    padding: 2px 16px;
-    display: block;
-  }
-} */
