@@ -21,18 +21,47 @@ main {
     font-size: 3em;
     font-weight: lighter;
 
-    
   }
-.calendarType{
-  text-align: center;
-  border-radius: 10px;
-  background: #f58686;
-  padding: 5px;
-  width: 10%;
+  /* DROP DOWN MENU */
+  .dropbtn {
+    background-color: #df5050;
+    border-radius: 10px;
+    
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
 
-  margin-bottom: 10px;
+  }
+  
+  .dropdown {
+    position: -webkit-sticky;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    min-width: 130px;
 
-}
+
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 9px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {     border-radius: 10px;background-color:#7faf82;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #df5050;}
 
 
 /* ======================= Style Isi Kalender ======================= */
@@ -76,6 +105,11 @@ main {
     color: rgb(224, 224, 224);
   }
 
+  #today{
+
+    background-color: rgb(238, 238, 238);
+
+  }
 
 /* ======================= Style Modal Box ======================= */
 .modal,.modal1 {

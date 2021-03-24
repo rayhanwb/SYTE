@@ -18,7 +18,7 @@
 <body>
 
     <!--=========== NAV ===========-->
-<!-- TOP -->
+    <!-- TOP -->
 
     <nav class="top-nav">
         <div class="nav-container">
@@ -56,9 +56,7 @@
         <a class="inactive" href="index.html">
             <img class="icon" src="icon/home.svg">Dashboard
         </a>
-        <a class="inactive" href="#">
-            <img class="icon" src="icon/user.svg">Profile
-        </a>
+
         <a class="active" href="Statistics.html">
             <img class="icon" src="icon/activity.svg">Statistic
         </a>
@@ -88,27 +86,31 @@
             <div class="statistic-grid-container">
                 <!-- Small Card -->
                 <div class="small-card">
-                    <b>7</b>
                     <h3>Mata Kuliah</h3>
+                    <b>7</b>
                 </div>
 
                 <div class="small-card">
-                    <b>20</b>
                     <h3>SKS</h3>
+                    <b>20</b>
                 </div>
 
                 <div class="small-card">
-                    <b>4</b>
                     <h3>Semester</h3>
+                    <b>4</b>
                 </div>
 
                 <div class="small-card">
-                    <b>2</b>
                     <h3>Tingkat</h3>
+                    <b>2</b>
+                </div>
+                <div class="small-card">
+                    <h3>Kelas</h3>
+                    <b>4B</b>
                 </div>
 
                 <!-- Riwayat Tugas -->
-                <div class="recent-assignment">
+                <!-- <div class="announcement">
                     <div class="item7">
                         <h3>Announcement</h3>
                         <div class="row">
@@ -154,12 +156,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Grafik Besar -->
                 <div class="big-graph">
                     <h2> Grafik IPK Semester</h2>
-                    <div id="ip-semester" style="height: 300px; width: 100%;"></div>
+                    <div id="chart-ip-semester" style="height: 300px; width: 100%;"></div>
                     <!-- <div>
                         <div class="grafiknilaicontainer">
                             <div class="charts1">
@@ -213,12 +215,12 @@
 
                         </div>
                     </div>
+                    <p>IPK merupakan perhitungan rata-rata dari nilai IP mahasiswa setiap semester</p>
                 </div>
 
                 <!-- Tugas Terakhir -->
-                <div class="last-assignment">
-                    <h3>Nilai</h3>
-                    <!-- <div id="assignment-result" style="height: 300px; width: 100%;"></div> -->
+
+                <div class="table-last-assignmnet">
                     <table class="tabel">
                         <tr class="tabel">
                             <th>Tugas Akhir</th>
@@ -326,6 +328,11 @@
                     
                     </div> -->
 
+                </div>
+
+                <div class="chart-last-assignment">
+                    <h3>Nilai</h3>
+                    <div id="chart-assignment-result" style="height: 300px; width: 100%;"></div>
                 </div>
 
                 <!-- Persentase Keaktifan -->
