@@ -105,6 +105,11 @@ main {
     color: rgb(224, 224, 224);
   }
 
+  #today{
+
+    background-color: rgb(238, 238, 238);
+
+  }
 
 /* ======================= Style Modal Box ======================= */
 .modal,.modal1 {
