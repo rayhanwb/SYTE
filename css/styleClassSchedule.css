@@ -1,0 +1,164 @@
+
+
+
+/* ======================= Style Umum ======================= */
+main {
+    grid-area: content;
+    padding: 48px;
+    /* background-color: aqua; */
+  }
+  
+  
+  /* ======================= Style Judul Kalender ======================= */
+  
+  
+  .Bulan{
+      font-size: 3em;
+      font-weight: bold;
+    }
+    .Tahun{
+      
+      font-size: 3em;
+      font-weight: lighter;
+    }
+  /* DROP DOWN MENU */
+  .dropbtn {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    min-width: 110px;
+
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {     border-radius: 10px;background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+  
+  /* ======================= Style Isi Kalender ======================= */
+    .calendar__week, .calendar__header {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);  
+    }
+    .calendar__week {
+      grid-auto-rows: 160px;
+      text-align: left;
+    }
+    
+    .calendar__header {
+      grid-auto-rows: 50px;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .calendar {
+      background-color: white;
+      border: 2px solid #e1e1e1;
+    }
+    
+    .calendar__header > div {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+    
+    .calendar__day {
+      padding: 16px;
+      border-right: 2px solid #e1e1e1;
+      border-top: 2px solid #e1e1e1;
+    }
+    
+    .calendar__day:last-child {
+      border-right: 0;
+    }
+  
+    .AnotherMonth{
+      color: rgb(224, 224, 224);
+    }
+
+  /* TOOLTIP */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background-color: #f58686;
+    width: 100%;
+    border: none;
+    padding: 0.1vw 0.5vw 0.2vw 0.5vw; 
+    margin: 0.1vw;
+
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .matkul1{
+    background-color: #93f05d;
+  }
+  .matkul2{
+    background-color: #5d7ff0;
+  }
+  .matkul3{
+    background-color: #5ddaf0;
+  }
+  .matkul4{
+    background-color: #f05ddc;
+  }
+  .matkul5{
+    background-color: #e9f05d;
+  }
+  .matkul6{
+    background-color: #5df0dc;
+  }
+  .matkul7{
+    background-color: #f05d7d;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(240, 240, 240);
+    border: 1px rgb(49, 49, 49);
+    color: rgb(38, 38, 38);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px ;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+

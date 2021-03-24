@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="icon/logo.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styleClassSchedule.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-add.css">
+    <title>Schedule</title>
+</head>
+
+<body>
+    <!--=========== NAV ===========-->
+    <!-- TOP -->
+
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="icon/logo.svg" alt="Syte">
+                <p>SYTE</p>
+            </div>
+
+            <div class="search">
+                <label for="search">
+                    <input type="text" id="search" placeholder="Search">
+                </label>
+            </div>
+
+            <div class="notification">
+                <a href="#notification">
+                    <img src="icon/bell.svg">
+                </a>
+            </div>
+
+            <div class="user-thumbnail">
+                <img src="img/uchiha.png" alt="Uchiha">
+            </div>
+        </div>
+    </nav>
+
+    <nav id="breadcrumb">
+        <h2>Schedule</h2>
+    </nav>
+
+    <!-- SIDE -->
+    <div class="side">
+
+        <a class="inactive" href="index.html">
+            <img class="icon" src="icon/home.svg">Dashboard
+        </a>
+        <a class="inactive" href="#">
+            <img class="icon" src="icon/user.svg">Profile
+        </a>
+        <a class="inactive" href="Statistics.html">
+            <img class="icon" src="icon/activity.svg">Statistic
+        </a>
+        <a class="active" href="schedule.html">
+            <img class="icon" src="icon/calendar.svg">Schedule
+        </a>
+
+        <div class="bottom-menu">
+            <a class="inactive" href="settings.html">
+                <img class="icon" src="icon/sliders.svg">Setting
+            </a>
+            <a class="inactive" href="#" id="logout">
+                <img class="icon" src="icon/log-out.svg">Log Out
+            </a>
+        </div>
+
+    </div>
+
+
+    <!--=========== CONTENT ===========-->
+
+    <div class="content">
+        <!-- <div class="wrapper"> -->
+        <!-- <div class="content"> -->
+        <main>
+            <div>
+                <div class="Bulan">March</div>
+                <div class="Tahun">2021</div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="calendar">
+                <div class="calendar__header">
+                    <div>Monday</div>
+                    <div>Tuesday</div>
+                    <div>Wednesday</div>
+                    <div>Thursday</div>
+                    <div>Friday</div>
+                    <div>Saturday</div>
+                    <div>Sunday</div>
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day AnotherMonth">28</div>
+                    <div class="calendar__day day">1</div>
+                    <div class="calendar__day day">2
+                        <div class="tooltip matkul1"> Bisnis Teknologi Informasi
+                            <span class="tooltiptext">Bisnis Teknologi Informasi <br>08.40 - 10.20</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">3
+                        <div class="tooltip matkul2"> Sistem Operasi
+                            <span class="tooltiptext">Sistem Operasi <br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul3"> Pemrograman Berorientasi Objek
+                            <span class="tooltiptext">Pemrograman Berorientasi Objek<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul4"> Pemrograman Web
+                            <span class="tooltiptext">Pemrograman Web<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">4
+                        <div class="tooltip matkul5"> Konstruksi Perangkat Lunak
+                            <span class="tooltiptext">Konstruksi Perangkat Lunak<br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul6"> Teknologi Basis Data
+                            <span class="tooltiptext">Teknologi Basis Data<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul7"> Jaringan Komputer
+                            <span class="tooltiptext ">Jaringan Komputer<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">5</div>
+                    <div class="calendar__day day">6</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">7</div>
+                    <div class="calendar__day day">8</div>
+                    <div class="calendar__day day">9
+                        <div class="tooltip matkul1"> Bisnis Teknologi Informasi
+                            <span class="tooltiptext">Bisnis Teknologi Informasi <br>08.40 - 10.20</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">10
+                        <div class="tooltip matkul2"> Sistem Operasi
+                            <span class="tooltiptext">Sistem Operasi <br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul3"> Pemrograman Berorientasi Objek
+                            <span class="tooltiptext">Pemrograman Berorientasi Objek<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul4"> Pemrograman Web
+                            <span class="tooltiptext">Pemrograman Web<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">11
+                        <div class="tooltip matkul5"> Konstruksi Perangkat Lunak
+                            <span class="tooltiptext">Konstruksi Perangkat Lunak<br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul6"> Teknologi Basis Data
+                            <span class="tooltiptext">Teknologi Basis Data<br>09.30 - 12.00</span>
+                        </div>
+
+                    </div>
+                    <div class="calendar__day day">12
+                        <div class="tooltip matkul7"> Jaringan Komputer
+                            <span class="tooltiptext ">Jaringan Komputer<br>07.00 - 09.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">13</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">14</div>
+                    <div class="calendar__day day">15</div>
+                    <div class="calendar__day day">16
+                        <div class="tooltip matkul1"> Bisnis Teknologi Informasi
+                            <span class="tooltiptext">Bisnis Teknologi Informasi <br>08.40 - 10.20</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">17
+                        <div class="tooltip matkul2"> Sistem Operasi
+                            <span class="tooltiptext">Sistem Operasi <br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul3"> Pemrograman Berorientasi Objek
+                            <span class="tooltiptext">Pemrograman Berorientasi Objek<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul4"> Pemrograman Web
+                            <span class="tooltiptext">Pemrograman Web<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">18
+                        <div class="tooltip matkul5"> Konstruksi Perangkat Lunak
+                            <span class="tooltiptext">Konstruksi Perangkat Lunak<br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul6"> Teknologi Basis Data
+                            <span class="tooltiptext">Teknologi Basis Data<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul7"> Jaringan Komputer
+                            <span class="tooltiptext ">Jaringan Komputer<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">19</div>
+                    <div class="calendar__day day">20</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">21</div>
+                    <div class="calendar__day day">22</div>
+                    <div class="calendar__day day">23
+                        <div class="tooltip matkul1"> Bisnis Teknologi Informasi
+                            <span class="tooltiptext">Bisnis Teknologi Informasi <br>08.40 - 10.20</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">24
+                        <div class="tooltip matkul2"> Sistem Operasi
+                            <span class="tooltiptext">Sistem Operasi <br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul3"> Pemrograman Berorientasi Objek
+                            <span class="tooltiptext">Pemrograman Berorientasi Objek<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul4"> Pemrograman Web
+                            <span class="tooltiptext">Pemrograman Web<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">25
+                        <div class="tooltip matkul5"> Konstruksi Perangkat Lunak
+                            <span class="tooltiptext">Konstruksi Perangkat Lunak<br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul6"> Teknologi Basis Data
+                            <span class="tooltiptext">Teknologi Basis Data<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul7"> Jaringan Komputer
+                            <span class="tooltiptext ">Jaringan Komputer<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">26</div>
+                    <div class="calendar__day day">27</div>
+
+                </div>
+                <div class="calendar__week">
+                    <div class="calendar__day day">28</div>
+                    <div class="calendar__day day">29</div>
+                    <div class="calendar__day day">30
+                        <div class="tooltip matkul1"> Bisnis Teknologi Informasi
+                            <span class="tooltiptext">Bisnis Teknologi Informasi <br>08.40 - 10.20</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day day">31
+                        <div class="tooltip matkul2"> Sistem Operasi
+                            <span class="tooltiptext">Sistem Operasi <br> 07.00 - 09.30</span>
+                        </div>
+                        <div class="tooltip matkul3"> Pemrograman Berorientasi Objek
+                            <span class="tooltiptext">Pemrograman Berorientasi Objek<br>09.30 - 12.00</span>
+                        </div>
+                        <div class="tooltip matkul4"> Pemrograman Web
+                            <span class="tooltiptext">Pemrograman Web<br>13.00 - 15.30</span>
+                        </div>
+                    </div>
+                    <div class="calendar__day AnotherMonth">1</div>
+                    <div class="calendar__day AnotherMonth">2</div>
+                    <div class="calendar__day AnotherMonth">3</div>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>
