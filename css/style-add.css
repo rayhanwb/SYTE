@@ -166,7 +166,7 @@
 }
 
 .side a.active {
-	background-color: #68B19D;
+	background-color: #30b3ac;
 	color: white;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .side a:hover:not(.active) {
-	background-color: #777;
+	background-color: rgb(128, 151, 155);
 	color: white;
 	transition: 0.2s;
 }
