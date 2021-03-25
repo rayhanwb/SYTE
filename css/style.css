@@ -77,15 +77,6 @@ p {
   padding-right: 18px;
 }
 
-@media screen and (max-width: 890px) {
-  .column {
-    width: 100%;
-  }
-
-  .row {
-    display: block;
-  }
-}
 
 
 /*Scrollbar*/
