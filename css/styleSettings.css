@@ -67,7 +67,7 @@ p {
   padding: 15px;
   /*background-color: salmon;*/
   border: 1px solid #E5E9EB;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   overflow: auto;
 }
 
@@ -124,14 +124,14 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto-fit,auto;
   grid-gap: 30px;
-  padding: 40px;
+  padding: 30px;
 }
 
 .content-grid-container > div,
 .statistic-grid-container > div {
 
-  padding: 20px;
-  /* border: 1px solid #E5E9EB; */
+  padding: 30px;
+  border: 1px solid #E5E9EB;
   border-radius: 15px;
 }
 
@@ -202,11 +202,18 @@ p {
   grid-column: 4;
 }
 
-/* #date{
-  height: 40px !important;
-  /* width: auto; */
-  /* background-color: blueviolet; */
-} */
+#save-button {
+  padding-top: 150px;
+}
+
+#save-button #item-flex-right {
+  width: 80%;
+}
+
+#save-button #item-flex-center {
+  width: 20%;
+}
+
 
 .input {
   /* padding: 4px; */
@@ -301,6 +308,22 @@ textarea[class=input]{
   padding-bottom: 2px;
   border-radius: 5px;
   }
+
   .buttonstyle-save:hover{
     background:rgb(122, 247, 247);background-position: 0px -501px;color:black; 
   }
+
+.row input[type=text], .row textarea, .row button {
+  font-family: 'Inter', sans-serif;
+	margin: auto 0;
+	border: 1px solid #9AA0A6;
+	border-radius: 1px;
+	transition: 0.5s;
+	outline: none;
+}
+
+.row input[type=text]:focus, .row textarea:focus {
+	border: 1px solid #30B3AC;
+	background-position: 10px 6px;
+  transition: 1s;
+}
