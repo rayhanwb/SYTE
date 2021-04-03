@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYTE - Homepage</title>
+
+    <link rel="icon" href="icon/logo.svg" sizes="any" type="image/svg+xml">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/style-add.css"> -->
+    <link rel="stylesheet" href="css/style-homepage.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="row">
+                <div class="column" id="left">
+                    <img src="icon/Vector.svg">
+                </div>
+                <div class="column" id="right">
+                    <!-- <img src="img/time-management.svg"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="column" id="left">
+                    <img src="icon/logo.svg" alt="SYTE" id="logo">
+                    <h3 style="display: inline;">SYTE</h3>
+                    <h1>Student Academic Smart Scheduler</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
+                </div>
+                <div class="column">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="text" id="nim" placeholder="NIM">                        
+                        <input type="password" id="input-password" placeholder="Password">
+                        <span class="show-password">
+                            <img src="icon/search.svg"  onClick="showPass()">
+                        </span>
+
+                        <a type="submit" href="index.html" id="login-button">Login</a>
+                        <!-- <input type="submit" value="Login"> -->
+                        <!-- <input type="submit" value="Register" style="margin-left: 20px;"> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function showPass() {
+            var x = document.getElementById("input-password");
+            if (x.type == password) {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+        function submitLogin() {
+            window.location = "index.html";
+        }
+    </script>
+</body>
+</html>

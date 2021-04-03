@@ -1,0 +1,236 @@
+/* MAIN */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100% !important;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #252C32;
+}
+
+h1 {
+  /* font-size: 30px; */
+  font-size: 2.3vw;
+  font-weight: 600;
+  letter-spacing: 2.2%;
+}
+
+h2 {
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: -1.4%;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1.4%;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5%;
+}
+
+.container {
+	/*float: left;*/
+  	/*width: 90%;*/
+  	/* width: 1280px; */
+    height: 100%;
+  	margin: auto;
+    
+  	/* padding: 10px; */
+
+  	/* background-color: lightblue; */
+  	align-items: center;
+}
+
+.row {
+	/* margin: 120px 0; */
+	display: flex;
+	align-items: center;
+	/* padding: 10% 0; */
+	height: 100%;
+	/* background-color: violet; */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin: 20px;
+  padding: 10px;
+  /* background-color: salmon; */
+  overflow: auto;
+
+  /* height: 100%; */
+}
+
+/* BACKGROUND */
+
+.background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background .row {
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.background img {
+  position: absolute;
+  z-index: 1;
+
+  /* padding: 0 50px; */
+  /* margin: 0 auto; */
+  
+  height: 93%;
+  width: 40%;
+}
+
+.background #left img {
+  left: 5%;
+}
+
+.background #right img {
+  right: 10%;
+  width: 30%;
+}
+
+/* CONTENT */
+
+.content {
+  height: 100%;
+}
+
+#logo {
+  /* display: inline-block; */
+  height: 2vw;
+}
+
+.content .container {
+  padding: 0 0 0 0;
+  /* width: 1280px; */
+  /* height: 100%; */
+  /* background-color: red; */
+}
+
+.content .column {
+  margin: 7%;
+  /* background-color: blue; */
+}
+
+.content #left {
+  color: white;
+  margin: 7vw 10vw 10vw 10vw;
+}
+
+/* LOGIN FORM */
+
+input {
+  padding: 10px 0;
+  font-size: 1vw;
+}
+
+input[type=text],[type=password] {
+  display: block;
+  margin: 30px 0;
+  /* text-align: center; */
+	box-sizing: border-box;
+	border: none;
+  /* width: 300px; */
+  width: 20vw;
+	
+	border-bottom: 1px solid #363636;
+}
+
+input[type=text]:focus {
+	border-bottom: 1px solid #31b0cc;
+}
+
+input[type=password]:focus {
+	border-bottom: 1px solid #31b0cc;
+}
+
+input[type=text]:focus, input[type=submit]:focus, textarea:focus{
+	outline: none;
+}
+
+textarea:focus {
+	border: 1px solid #31b0cc;
+}
+
+/*Bagian Button*/
+input[type=submit] {
+	background-color: rgba(0,0,0,0);
+	color: #363636;
+	border: 1px solid #363636;
+	/* margin: 30px 0; */
+	padding: 12px 20px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+input[type=submit]:hover {
+	background-color: #363636;
+	color: white;
+	border: 1px solid #363636;
+}
+
+.show-password {
+  float: right;
+  margin-right: 12vw;
+  margin-top: -4.2vw;
+  position: relative;
+  z-index: 2;
+}
+
+.show-password img {
+  height: 1.3vw;
+}
+
+
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+#login-button {
+	background-color: rgba(0,0,0,0);
+	color: #363636;
+	border: 1px solid #363636;
+	/* margin: 30px 0; */
+	padding: 10px 20px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+
+  font-size: 1vw;
+}
+
+
+
+#login-button:hover {
+	background-color: #363636;
+	color: white;
+	border: 1px solid #363636;
+}
