@@ -23,7 +23,7 @@ main {
 
   }
   /* DROP DOWN MENU */
-  .dropbtn {
+  .dropbtns {
     background-color: #4CAF50;
     border-radius: 10px;
     
@@ -35,12 +35,12 @@ main {
 
   }
   
-  .dropdown {
+  .dropdowns {
     position: -webkit-sticky;
     display: inline-block;
   }
   
-  .dropdown-content {
+  .dropdown-contents {
     display: none;
     position: absolute;
     background-color: #df5050;
@@ -50,18 +50,18 @@ main {
 
   }
   
-  .dropdown-content a {
+  .dropdown-contents a {
     color: rgb(255, 255, 255);
     padding: 10px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {     border-radius: 10px;background-color:#dd9a9a;}
+  .dropdown-contents a:hover {     border-radius: 10px;background-color:#dd9a9a;}
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdowns:hover .dropdown-contents {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdowns:hover .dropbtns {background-color: #3e8e41;}
   
   
   /* ======================= Style Isi Kalender ======================= */
