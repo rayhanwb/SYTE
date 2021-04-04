@@ -2,60 +2,45 @@
 
 window.onload = function () {
 
-    var chart1 = new CanvasJS.Chart("chart-ip-semester", {
-        animationEnabled: true,
+    var chart = new CanvasJS.Chart("chartContainer", {
         theme: "light2",
+        animationEnabled: true,
+        title:{
+            text: ""
+        },	
 
-        axisX: {
-            valueFormatString: "DD MMM",
-            crosshair: {
-                enabled: true,
-                snapToDataPoint: true
-            }
-        },
-        axisY: {
-            title: "Indeks Penilaian (IP)",
-            includeZero: true,
-            crosshair: {
-                enabled: true
-            }
-        },
         toolTip: {
             shared: true
         },
         legend: {
-            cursor: "pointer",
-            verticalAlign: "bottom",
-            horizontalAlign: "left",
-            dockInsidePlotArea: true,
-            itemclick: toogleDataSeries
+            cursor:"pointer",
+            itemclick: toggleDataSeries
         },
         data: [{
-            type: "line",
-            showInLegend: true,
-            name: "IP",
-            markerType: "square",
-            xValueFormatString: "DD MMM, YYYY",
-            color: "#F08080",
-            dataPoints: [
-                { label: "Semester 1", y: 3.00 },
+            type: "column",
+            name: "IP Anda)",
+            legendText: "IP Anda",
+            showInLegend: true, 
+            dataPoints:[
+                { label: "Semester 1", y:  3.00 },
                 { label: "Semester 2", y: 2.94 },
                 { label: "Semester 3", y: 3.25 }
             ]
         },
         {
-            type: "line",
-            showInLegend: true,
+            type: "column",	
             name: "Rata-rata IP seluruh mahasiswa",
-            lineDashType: "dash",
-            dataPoints: [
+            legendText: "Rata-rata IP seluruh mahasiswa",
+            axisYType: "secondary",
+            showInLegend: true,
+            dataPoints:[
                 { label: "Semester 1", y: 2.57 },
                 { label: "Semester 2", y: 3.54 },
                 { label: "Semester 3", y: 3.11 }
             ]
         }]
     });
-    chart1.render();
+    chart.render();
 
     function toogleDataSeries(e) {
         if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
@@ -65,8 +50,6 @@ window.onload = function () {
         }
         chart1.render();
     }
-
-
 
     // CHART NILAI TUGAS PER PERTEMUAN ----------------------
 
@@ -185,8 +168,10 @@ window.onload = function () {
         }
         chart2.render();
     }
-    
-    
+}
 
+// Modal Matkul
+{
+    
 }
 

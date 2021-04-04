@@ -77,6 +77,15 @@ p {
   padding-right: 18px;
 }
 
+@media screen and (max-width: 890px) {
+  .column {
+    width: 100%;
+  }
+
+  .row {
+    display: block;
+  }
+}
 
 
 /*Scrollbar*/
@@ -127,28 +136,3 @@ p {
     background-color: gold;
 }
 
-/* .rowis {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-  padding: 10px;
-}
-
-.rowis .item2-right p{
-  text-align: end;
-}
-
-
-.item6 .label p{
-  text-align: end;
-} */
-
-/*.imgg {
-    background-image: url(uchiha.svg);
-    background-color: whitesmoke;
-    background-size: cover;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    border: 1px solid #b4ff28;
-}*/

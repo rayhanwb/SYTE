@@ -31,7 +31,7 @@
                 <div class="column" id="left">
                     <img src="icon/logo.svg" alt="SYTE" id="logo">
                     <h3 style="display: inline;">SYTE</h3>
-                    <h1>Student Academic Smart Scheduler</h1>
+                    <h1>System Academic Website</h1>
                     <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
                 </div>
                 <div class="column">
@@ -39,12 +39,12 @@
                     <form>
                         <input type="text" id="nim" placeholder="NIM">                        
                         <input type="password" id="input-password" placeholder="Password">
-                        <span class="show-password">
-                            <img src="icon/search.svg"  onClick="showPass()">
-                        </span>
+                        <p id="login-fail-msg" style="display: none; color: red; margin-top: -1vw;;">You have wrong input in NIM or Password, please try again.</p>
 
-                        <a type="submit" href="index.html" id="login-button">Login</a>
-                        <!-- <input type="submit" value="Login"> -->
+                        <!-- <input type="checkbox" onclick="showPassword()">aaa<br> -->
+
+                        <!-- <a type="submit" href="index.html" id="login-button">Login</a> -->
+                        <input type="submit" id="login-button" value="Login" onclick="loginButton()">
                         <!-- <input type="submit" value="Register" style="margin-left: 20px;"> -->
                     </form>
                 </div>
@@ -53,7 +53,7 @@
     </div>
 
     <script type="text/javascript">
-        function showPass() {
+        function showPassword() {
             var x = document.getElementById("input-password");
             if (x.type == password) {
                 x.type = "text";
@@ -62,8 +62,28 @@
             }
         }
 
-        function submitLogin() {
-            window.location = "index.html";
+        function loginButton() {
+            var nim = document.getElementById("nim");
+            var password = document.getElementById("input-password");
+            var login = document.getElementById("login-button");
+            var loginFail = document.getElementById("login-fail-msg");
+            
+            login.type = "button";            
+            
+            if (password.value !== "pulauCibiru") {
+                password.style.borderColor = "red";
+                
+                if (nim !== "1901010") {
+                    nim.style.borderColor = "red";
+                }
+
+                loginFail.style.display = "block";
+                window.location.href = '#wrong-login';
+                login.type = "submit";
+
+            } else {
+                window.location.href = 'index.html';
+            }
         }
     </script>
 </body>

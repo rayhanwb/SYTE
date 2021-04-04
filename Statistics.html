@@ -17,7 +17,6 @@
 
 <body>
 
-    <!--=========== NAV ===========-->
     <!-- TOP -->
 
     <nav class="top-nav">
@@ -68,7 +67,7 @@
             <a class="inactive" href="settings.html">
                 <img class="icon" src="icon/sliders.svg">Setting
             </a>
-            <a class="inactive" href="#" id="logout">
+            <a class="inactive" href="homepage.html" id="logout">
                 <img class="icon" src="icon/log-out.svg">Log Out
             </a>
         </div>
@@ -87,7 +86,65 @@
                 <!-- Small Card -->
                 <div class="small-card">
                     <h3>Mata Kuliah</h3>
-                    <b>7</b>
+                    <button id="jml-daftar-matkul"><b>7</b></button>
+
+                    <!-- Modal Mata Kuliah -->
+                    <div class="modal" id="modal-window">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3 style="text-align: center;">Daftar Mata Kuliah</h3>
+                            <table class="tabel">
+                                <tr class="tabel">
+                                    <th></th>
+                                    <th>Courses</th>
+                                    <th>Lecturer</th>
+                                    <th>Schedule</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>IT Bussiness</td>
+                                    <td>Hendriyana, S.T., M.Kom. & Dr. Asep Wahyudin, S.Kom., M.T.</td>
+                                    <td>Tuesday, 08:40 AM - 10:20 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Operation System (OS)</td>
+                                    <td>Asyifa Imanda Septiana, S.Pd., M.Eng. & Raditya Muhammad, S.T., M.T.</td>
+                                    <td>Wednesday, 07:00 AM - 09:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Object Oriented Programming (OOP)</td>
+                                    <td>Pa Deden</td>
+                                    <td>Wednesday, 09:30 AM - 12:00 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Web Programming</td>
+                                    <td>Hendriyana, S.T., M.Kom.</td>
+                                    <td>Wednesday, 01:00 PM - 03:30 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Construction Software</td>
+                                    <td>Mochamad Iqbal Ardimansyah, S.T., M.Kom.</td>
+                                    <td>Thursday, 07:00 AM - 09:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Database Technology</td>
+                                    <td>Dian Anggraini, S.ST., M.T.</td>
+                                    <td>Thursday, 09:30 AM - 12:00 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Computer Network</td>
+                                    <td>Asyifa Imanda Septiana, S.Pd., M.Eng. & Raditya Muhammad, S.T., M.T.</td>
+                                    <td>Thursday, 01:30 PM - 15:30 PM</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="small-card">
@@ -112,7 +169,8 @@
                 <!-- Grafik Besar -->
                 <div class="big-graph">
                     <h2> Grafik IPK Semester</h2>
-                    <div id="chart-ip-semester" style="height: 300px; width: 100%;"></div>
+                    <!-- <div id="chart-ip-semester" style="height: 300px; width: 100%;"></div> -->
+                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                 </div>
 
                 <!-- IPK -->
@@ -177,6 +235,32 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+        var modal = document.getElementById("modal-window");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("jml-daftar-matkul");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
